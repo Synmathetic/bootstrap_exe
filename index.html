@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alternatitle</title>
+    <link rel="stylesheet" href="./lib/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<style>
+    header {
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        padding-bottom: 5px;
+    }
+
+    h1 {
+        text-align:center;
+        padding-bottom: 5px;
+    }
+
+    .carousel img {
+        height: 800px;
+        object-fit: cover;
+        width: 200px;
+        padding-top: 5px;
+        padding-bottom: 20px;
+    }
+
+    .col-4 {
+        margin-bottom: 5px;
+    }
+
+    @media only screen and (min-width: 641px)and (max-width: 1023px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .col-4 {
+        grid-template-columns: repeat(2, 49%);
+        width: 50%;
+        margin-bottom: 10px;
+    }
+}
+
+    @media only screen and (max-width: 640px) {
+        .container {
+        max-width: 90%;
+    }
+
+    .col-4 {
+        width: 100%;
+        padding-bottom: 5px;
+    }
+}
+
+</style>
+<body>
+    <header>
+        <h1>Alternatitle</h1>
+    </header>
+    <div class="container">
+        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div data-bs-interval="3000" class="carousel-item active">
+                    <img class="d-block w-100" src="./imagens/sonic-youth.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Sonic Youth</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./imagens/My_Bloody_Valentine.jpg" />
+                    <div class="carousel-caption">
+                        <h2>My Bloody Valentine</h2>
+                    </div>
+                </div>
+                <div data-bs-interval="3000" class="carousel-item">
+                    <img class="d-block w-100" src="./imagens/unwound.jpg" />
+                    <div class="carousel-caption">
+                        <h2>Unwound</h2>
+                    </div>
+                </div>
+            </div>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+            </div>
+        </div>
+    </div>
+
+    <h1>Em Destaque</h1>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <article class="card text-bg-dark">
+                    <header class="card-header">
+                        Alternative
+                    </header>
+                    <img src="./imagens/nirvana.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">30 anos sem Nirvana</h4>
+                        <p class="card-text">
+                            Há 30 anos o Nirvana chegava ao seu fim com a morte do vocalista Kurt Cobain.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>21/02/2024 às 17:00:00</time>
+                    </footer>
+                </article>      
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <header class="card-header">
+                        Singer-songwriter
+                    </header>
+                    <img src="./imagens/elliott-smith.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">20 anos depois</h4>
+                        <p class="card-text">
+                            O sucesso de Elliott Smith nos streamings, 20 anos após sua morte.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>21/02/2024 às 17:00:00</time>
+                    </footer>
+                </div>      
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <header class="card-header">
+                        Punk
+                    </header>
+                    <img src="./imagens/husker-du.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">Você se lembra?</h4>
+                        <p class="card-text">
+                            Relembre o grande show de 1985 do Hüsker Dü em Camden Palace, Londres.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>21/02/2024 às 17:00:00</time>
+                    </footer>
+                </div>      
+            </div>
+            <div class="col-4">
+                <div class="card text-bg-dark">
+                    <header class="card-header">
+                        Metal
+                    </header>
+                    <img src="./imagens/deftones.jpg" />
+                    <div class="card-body">
+                        <h4 class="card-title">Deftones nas redes sociais</h4>
+                        <p class="card-text">
+                            Deftones é sucesso em redes sociais, como o TikTok.
+                        </p>
+                        <a href="#" class="btn btn-primary">Leia mais</a>
+                    </div>
+                    <footer class="card-footer">
+                        Postado em <time>21/02/2024 às 17:00:00</time>
+                    </footer>
+                </div>      
+            </div>
+        </div>
+    </div>
+
+    <script src="./lib/bootstrap.bundle.min.js"></script>
+</body>
+</html>
